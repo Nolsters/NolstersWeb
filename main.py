@@ -5,7 +5,10 @@ app = Flask(__name__)
 def hello_world():
     return render_template("hello.html")
 
-
+@app.route('/quiz')
+def quiz():
+    return render_template("quiz.html")
+    
 if __name__ == "__main__":
     app.run()
 
